@@ -18,6 +18,8 @@ public class Tests
 
     private double GetFibonacci(int index)
     {
-        return 0;
+        if (index == 0)
+            return 0;
+        return 1;
     }
 }
