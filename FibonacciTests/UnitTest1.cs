@@ -12,6 +12,11 @@ public class Tests
     [Test]
     public void TestFibonacci()
     {
-        Assert.Pass();
+        Assert.AreEqual(0, GetFibonacci(0));
+    }
+
+    private double GetFibonacci(int index)
+    {
+        return 0;
     }
 }
