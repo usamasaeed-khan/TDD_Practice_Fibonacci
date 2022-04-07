@@ -23,8 +23,8 @@ public class Tests
     {
         if (index == 0)
             return 0;
-        if (index <= 2)
+        if (index == 1)
             return 1;
-        return 2;
+        return GetFibonacci(index - 1) + GetFibonacci(index - 2);
     }
 }
