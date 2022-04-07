@@ -10,11 +10,12 @@ public class Tests
     }
 
     [Test]
-    public void TestFibonacci()
+    [TestCase(0, 0)]
+    [TestCase(1, 1)]
+    [TestCase(1, 2)]
+    public void TestFibonacci(int expected, int index)
     {
-        Assert.AreEqual(0, GetFibonacci(0));
-        Assert.AreEqual(1, GetFibonacci(1));
-        Assert.AreEqual(1, GetFibonacci(2));
+        Assert.AreEqual(expected, GetFibonacci(index));
     }
 
     private double GetFibonacci(int index)
