@@ -14,6 +14,7 @@ public class Tests
     {
         Assert.AreEqual(0, GetFibonacci(0));
         Assert.AreEqual(1, GetFibonacci(1));
+        Assert.AreEqual(1, GetFibonacci(2));
     }
 
     private double GetFibonacci(int index)
